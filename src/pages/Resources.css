@@ -1,0 +1,42 @@
+.resources-page {
+    min-height: 100vh;
+    background-color: var(--background-light);
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.resources-hero {
+    background-color: #1c2b50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.resources-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.resources-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(28, 43, 80, 0.1), transparent);
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .resources-hero {
+        padding: 40px 20px;
+    }
+    .resources-title {
+        font-size: 2rem;
+    }
+}
