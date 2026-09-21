@@ -18,9 +18,6 @@ const DimensionTool = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Only render in development mode
-    if (import.meta.env.PROD) return null;
-
     return (
         <div style={{
             position: 'fixed',
