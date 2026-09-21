@@ -22,7 +22,7 @@
     z-index: -1;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1024px) {
     body.popup-open .navbar-header {
         display: none !important; /* Completely hide navbar when popups are open */
     }
@@ -379,7 +379,7 @@
     }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1024px) {
     .mobile-menu-toggle {
         display: block;
     }
@@ -469,5 +469,31 @@
         box-shadow: none;
         border: none;
         min-width: auto;
+    }
+}
+
+/* Responsive adjustments for 14-inch and 13-inch laptops to prevent overlap */
+@media (min-width: 1025px) and (max-width: 1380px) {
+    .nav-links {
+        gap: 15px;
+        margin: 0 0 0 30px;
+    }
+    .nav-links li a {
+        font-size: 0.78rem;
+    }
+    .nav-right-actions {
+        gap: 15px;
+    }
+    .nav-contact-pill {
+        padding: 8px 12px;
+    }
+    .nav-contact-pill a {
+        font-size: 13px;
+    }
+    .nav-contact-pill i {
+        font-size: 14px;
+    }
+    .logo-container img {
+        height: 40px;
     }
 }

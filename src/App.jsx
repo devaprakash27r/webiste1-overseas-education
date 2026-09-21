@@ -6,12 +6,10 @@ import Courses from './pages/Courses'
 import FinancialGuidance from './pages/FinancialGuidance'
 
 import Resources from './pages/Resources'
-import DimensionTool from './components/common/DimensionTool'
 
 function App() {
   return (
     <BrowserRouter>
-      <DimensionTool />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

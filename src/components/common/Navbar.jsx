@@ -126,7 +126,7 @@ const Navbar = () => {
     };
 
     const handleDropdownClick = (e, dropdownName) => {
-        if (window.innerWidth <= 1380) { // Mobile menu breakpoint
+        if (window.innerWidth <= 1024) { // Mobile menu breakpoint
             e.preventDefault();
             setExpandedDropdown(expandedDropdown === dropdownName ? null : dropdownName);
         } else {
